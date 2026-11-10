@@ -10,14 +10,16 @@ public class Report implements Serializable {
     LocalDate date;
     double values;
 
-    public Report(String numberAccount, String type, LocalDate date, double values) {
+    public Report(String numberAccount, String type, double values) {
         this.numberAccount = numberAccount;
         this.type = type;
         this.date = LocalDate.now();
         this.values = values;
     }
 
-    public Report() {}
+    public Report() {
+        this.date = LocalDate.now();
+    }
 
     public String getNumberAccount() {
         return numberAccount;

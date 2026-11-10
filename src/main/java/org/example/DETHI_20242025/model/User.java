@@ -1,6 +1,8 @@
 package org.example.DETHI_20242025.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     String username, password, numberAccount;
     double balance;
 
